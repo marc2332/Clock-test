@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2962FF"
+    tools:context=".MainActivity">
+
+
+    <DigitalClock
+        android:id="@+id/simpleDigitalClock"
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom|center_vertical|center_horizontal"
+        android:textColor="#FFFFFF"
+        android:textSize="70dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="36dp"
+        android:clickable="true"
+        app:backgroundTint="#FFFFFF"
+        app:layout_anchorGravity="bottom|center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#1f84d6"
+        app:srcCompat="@drawable/ic_language_black_24dp" />
+
+    <TextView
+        android:id="@+id/text_date_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="(date)"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_anchor="@+id/simpleDigitalClock"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simpleDigitalClock" />
+
+
+    <!--  red color for the displayed text -->
+</android.support.constraint.ConstraintLayout>
